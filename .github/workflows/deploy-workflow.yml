@@ -14,6 +14,6 @@ jobs:
     steps:
       - name: Print Input Variable 1
         run: |
-          echo "${{ inputs.deployment }}" &/
-          echo $LOCAL_SECRET &/
+          echo "${{ inputs.deployment }}" &&\
+          echo $LOCAL_SECRET &&\
           echo $LOCAL_VARIABLE
