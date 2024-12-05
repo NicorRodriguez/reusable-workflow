@@ -15,5 +15,5 @@ jobs:
       - name: Print Input Variable 1
         run: |
           echo "${{ inputs.deployment }}" &&\
-          echo $LOCAL_SECRET &&\
-          echo $LOCAL_VARIABLE
+          echo "{{ secrets.LOCAL_SECRET }}" &&\
+          echo "{{ env.LOCAL_VARIABLE }}"
