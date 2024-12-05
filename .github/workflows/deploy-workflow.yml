@@ -16,4 +16,4 @@ jobs:
         run: |
           echo "Input: ${{ inputs.deployment }}"
           echo "Secret: ${{ secrets.LOCAL_SECRET }}" &&\
-          echo "Variable: ${{ env.LOCAL_VARIABLE }}"
+          echo "Variable: ${{ vars.LOCAL_VARIABLE }}"
