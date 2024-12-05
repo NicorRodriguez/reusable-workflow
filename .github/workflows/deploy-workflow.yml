@@ -13,4 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Input Variable 1
-        run: echo "${{ inputs.deployment }}"
+        run: |
+          echo "${{ inputs.deployment }}" &/
+          echo $LOCAL_SECRET &/
+          echo $LOCAL_VARIABLE
